@@ -1,13 +1,15 @@
+using PaintClone;
+
 namespace WinFormsLab
 {
     public partial class Form1 : Form
     {
         private string lastFileName;
-        private DirectBitmap bitmap;
-        private Pen pen = new Pen(Color.Black, 2);
+        private DirectBitmap bitmap;       
         public float zoomScale = 1.0f;
         private Tool currentTool;
         private Color currentToolColor = Color.Black;
+        private Pen pen = new Pen(Color.Black, 2);
         Rectangle? rectangle;
         Color lastPickedColor;
         private IniHandler iniFile;
@@ -103,7 +105,7 @@ namespace WinFormsLab
                 currentTool.DetachEvents();
                 if (currentTool is SelectionTool selectionTool)
                 {
-                    selectionTool.UpdateStatusText -= UpdateStatusText;  
+                    selectionTool.UpdateStatusText -= UpdateStatusText;
                 }
             }
 
@@ -681,6 +683,14 @@ namespace WinFormsLab
         private void UpdateStatusText(string text)
         {
             selectionStatusBarLabel.Text = text;
+        }
+
+        private void aboutMenuItem_Click(object sender, EventArgs e)
+        {
+            using (About aboutItem = new About())
+            {
+                aboutItem.ShowDialog();
+            }
         }
     }
 }

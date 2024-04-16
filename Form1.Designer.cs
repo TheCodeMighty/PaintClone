@@ -321,17 +321,18 @@
             // 
             aboutMenuItem.Name = "aboutMenuItem";
             aboutMenuItem.ShortcutKeys = Keys.F12;
-            aboutMenuItem.Size = new Size(205, 34);
+            aboutMenuItem.Size = new Size(270, 34);
             aboutMenuItem.Text = "About";
+            aboutMenuItem.Click += aboutMenuItem_Click;
             // 
             // statusBar
             // 
             statusBar.ImageScalingSize = new Size(24, 24);
             statusBar.Items.AddRange(new ToolStripItem[] { currentPositionStatusBarLabel, selectionStatusBarLabel, currentCanvasSizeLabel, currentZoomStatusBarLabel });
-            statusBar.Location = new Point(0, 722);
+            statusBar.Location = new Point(0, 728);
             statusBar.Name = "statusBar";
             statusBar.Padding = new Padding(1, 0, 20, 0);
-            statusBar.Size = new Size(1143, 28);
+            statusBar.Size = new Size(1143, 22);
             statusBar.TabIndex = 2;
             statusBar.Text = "statusStrip1";
             // 
@@ -342,7 +343,7 @@
             currentPositionStatusBarLabel.BorderStyle = Border3DStyle.SunkenOuter;
             currentPositionStatusBarLabel.Margin = new Padding(2);
             currentPositionStatusBarLabel.Name = "currentPositionStatusBarLabel";
-            currentPositionStatusBarLabel.Size = new Size(265, 24);
+            currentPositionStatusBarLabel.Size = new Size(276, 18);
             currentPositionStatusBarLabel.Spring = true;
             currentPositionStatusBarLabel.TextAlign = ContentAlignment.MiddleLeft;
             // 
@@ -354,7 +355,7 @@
             selectionStatusBarLabel.Margin = new Padding(2);
             selectionStatusBarLabel.Name = "selectionStatusBarLabel";
             selectionStatusBarLabel.RightToLeftAutoMirrorImage = true;
-            selectionStatusBarLabel.Size = new Size(265, 24);
+            selectionStatusBarLabel.Size = new Size(276, 18);
             selectionStatusBarLabel.Spring = true;
             // 
             // currentCanvasSizeLabel
@@ -364,7 +365,7 @@
             currentCanvasSizeLabel.BorderStyle = Border3DStyle.SunkenOuter;
             currentCanvasSizeLabel.Margin = new Padding(2);
             currentCanvasSizeLabel.Name = "currentCanvasSizeLabel";
-            currentCanvasSizeLabel.Size = new Size(265, 24);
+            currentCanvasSizeLabel.Size = new Size(276, 18);
             currentCanvasSizeLabel.Spring = true;
             // 
             // currentZoomStatusBarLabel
@@ -374,7 +375,7 @@
             currentZoomStatusBarLabel.BorderStyle = Border3DStyle.SunkenOuter;
             currentZoomStatusBarLabel.Margin = new Padding(2);
             currentZoomStatusBarLabel.Name = "currentZoomStatusBarLabel";
-            currentZoomStatusBarLabel.Size = new Size(265, 24);
+            currentZoomStatusBarLabel.Size = new Size(276, 18);
             currentZoomStatusBarLabel.Spring = true;
             currentZoomStatusBarLabel.TextAlign = ContentAlignment.MiddleRight;
             // 
