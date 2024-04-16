@@ -1,4 +1,5 @@
-﻿namespace PaintClone
+﻿
+namespace PaintClone
 {
     public partial class About : Form
     {
