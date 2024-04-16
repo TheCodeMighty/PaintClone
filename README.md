@@ -7,5 +7,5 @@ This repository contains an MS-Paint-like application developed for the "Program
 - **Pen Tool**: Draw freehand lines in any color.
 - **Line Tool**: Draw straight lines.
 - **Selection Tool**: Select an area of the canvas to perform operations such as color inversion.
-- **Color Inversion**: Invert the colors within the selected area on the canvas.
+- **Color Inversion**: Invert the colors on the selected area, or invert the whole canvas if nothing is selected.
 
