@@ -1,6 +1,6 @@
 # MS Paint Clone
 
-This repository contains an MS-Paint-like application developed for the "Programming in Graphical Environment" university course. The application is designed to replicate basic functionalities of the traditional Microsoft Paint program, providing tools such as a pen, line drawing, selection capabilities, and the ability to invert colors of selected areas.
+This repository contains an MS-Paint-like application developed for the "Programming in Graphical Environment" university course using **Windows Forms**. The application is designed to replicate basic functionalities of the traditional Microsoft Paint program, providing tools such as a pen, line drawing, selection capabilities, and the ability to invert colors of selected areas.
 
 ## Features
 
